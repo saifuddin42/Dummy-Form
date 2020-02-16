@@ -1,219 +1,188 @@
-/* google font */
+@import url("https://fonts.googleapis.com/css?family=Abel");
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-/* main body attributes */
+body,
+html {
+  color: #fff;
+  font-family: "Abel", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(17, 17, 17);
-    color: rgb(192, 192, 192);
+  font-size: 1.2em;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/back2.jpg) center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
 }
 
+.text-box {
+  background-color: rgba(117, 117, 117, 0.5);
+  border-radius: 20px;
+  margin: 2em auto;
+  padding: 20px;
+  width: 90%;
+}
 
-/* global container */
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.8em;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+hr {
+  width: 70%;
+  margin: 10px auto;
+}
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+  background-color: rgba(117, 117, 117, 0.5);
+  border-radius: 20px;
+  margin: auto;
+  width: 90%;
+  padding: 1em;
 }
 
-
-/*all unordered lists will have 0 margin and padding by default*/
-
-ul {
-    margin: 0;
-    padding: 0;
+#survey-form {
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
 }
 
-
-/* header atttributes */
-
-header {
-    background: rgb(10, 12, 43);
-    color: rgb(192, 192, 192);
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: rgb(214, 45, 15) 3px solid;
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  vertical-align: top;
+  margin-top: 20px;
 }
 
-
-/* anchor tags within the header */
-
-header a {
-    color: rgb(192, 192, 192);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
+.input-tab {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  margin-left: 10px;
 }
 
-
-/* all list items within the header */
-
-header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
+.input-field {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  margin: 18px 0 0 10px;
+  border: 1px solid #4a64b9;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
 }
 
-header #title {
-    float: left;
+::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: 300;
 }
 
-header #title h1 {
-    margin: 0;
+input {
+  margin: 7px;
 }
 
-header nav {
-    float: right;
-    margin-left: 0;
-    margin-top: 10px;
-    margin-bottom: 30px;
+#dropdown {
+  width: 100%;
+  padding: 5px;
+  margin: 20px 0 10px 10px;
+  border: 1px solid #4a64b9;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 15px;
+}
+.btn {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
 }
 
-header .highlight {
-    color: tomato;
-    font-weight: bold;
+button {
+  background-color: #4a64b9;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 10px 15px;
+  border: 1px solid;
 }
 
-header a:hover {
-    color: tomato;
-    font-weight: bold;
+button:hover {
+  background-color: #303f6e;
 }
-
-
-/* intro section attributes */
-
-#intro {
-    min-height: 400px;
-    background: url('../img/back.jpg') no-repeat;
-    text-align: center;
-}
-
-#intro h1 {
-    font-size: 55px;
-    margin-bottom: 10px;
-}
-
-#intro p {
-    font-size: 20px;
-}
-
-#profile_pic {
-    float: left;
-    margin-top: 50px;
-    margin-left: 0;
-    margin-right: 100px;
-}
-
-#profile_pic img {
-    max-width: 300px;
-    max-height: 300px;
-}
-
-#text {
-    margin-top: 100px;
-    margin-right: 0;
-    float: inline-end;
-    text-align: justify;
-}
-
-
-/* links ribbon */
-
-#links {
-    padding: 5px;
-    background: rgb(10, 12, 43);
-    color: rgb(192, 192, 192);
-    text-align: center;
-}
-
-#links a {
-    text-decoration: none;
-}
-
-
-/* all projects section attributes */
-
-#projects {
-    margin-top: 20px;
-}
-
-#projects .box {
-    float: left;
-    text-align: center;
-    width: 30%;
-    padding: 10px;
-}
-
-#projects .box img {
-    width: 90px;
-}
-
-#projects a {
-    color: rgb(192, 192, 192);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-#projects a:hover {
-    color: tomato;
-    font-weight: bold;
-}
-
-
-/* all footer attributes */
 
 footer {
-    padding: 5px;
-    background: rgb(10, 12, 43);
-    color: rgb(192, 192, 192);
-    text-align: center;
+  text-align: center;
+  font-size: 17px;
+  margin: 20px;
 }
 
 footer a {
-    color: #586388;
-    position: relative;
-    text-decoration: none;
-    font-weight: bold;
+  color: #4a64b9;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 footer a:hover {
-    color: #b3c4ff;
+  color: #6283f0;
 }
 
+footer p {
+  margin: 0;
+  font-size: 17px;
+}
 
-/* media queries */
+@media only screen and (max-width: 768px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../img/back2.jpg) center no-repeat fixed;
+    background-size: cover;
+  }
 
-@media(max-width: 768px) {
-    header #title,
-    header nav,
-    header nav li,
-    #intro,
-    #intro #profile_pic,
-    #intro #text,
-    #projects .box,
-    #projects {
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-    #intro #text {
-        padding-top: 0;
-        margin-top: 0;
-        padding-left: 0;
-        margin-left: 0;
-    }
-    #intro #profile_pic {
-        padding-bottom: 0;
-        margin-bottom: 0;
-        padding-right: 0;
-        margin-right: 0;
-    }
+  h1 {
+    font-size: 2em;
+  }
+
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .input-tab {
+    width: 100%;
+    float: left;
+    margin-left: -10px;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    margin: auto;
+  }
 }
